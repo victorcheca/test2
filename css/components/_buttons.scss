@@ -1,0 +1,53 @@
+.button{
+    padding: .8rem 1rem;
+    border-radius: 50px;
+    display: inline-flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-weight: $font-weight-bold;
+    border: 1px;
+    border-style: solid;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    max-width: 80%;
+   /*  
+    @media screen and (max-width: 767px){
+        height: 30px;
+        width: auto;
+        align-self: center;
+    } */
+    &--accent {
+        background-color: $color-accent;
+        color: $color-white!important;
+        border-color: $color-accent;
+        text-decoration: none;
+        max-width: 100%;
+    }
+    &--accent-outline {
+        background-color: transparent;
+        color: $color-accent!important;
+        border-color: $color-accent;
+    }
+    
+    &--overlay{
+        width: 50%;
+        
+    }
+
+    &--black-outline {
+        background-color: transparent;
+        color: black;
+        border-color: black;
+        max-width: 100%;
+        text-decoration: none;
+    }
+
+    &--yellow {
+        background-color: $color-yellow-1;
+        color: black;
+        border-color: $color-primary;
+        text-decoration: none;
+        max-width: 100%;
+    }
+}
