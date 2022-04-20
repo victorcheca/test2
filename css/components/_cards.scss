@@ -358,6 +358,7 @@
   color:black;
   text-decoration: none;
   
+
   @include tablet{
     flex-direction: row;
     aspect-ratio: 2.5;  
@@ -395,3 +396,16 @@
   }
   
 }
+.cuatro-flex{
+  flex: 31%;
+  img{
+    width: 400px;
+  }
+}
+.cinco-flex{
+  flex: 62%;
+  img{
+    width: 840px;
+    
+  }
+}    

@@ -1481,21 +1481,33 @@ body {
   }
 }
 
-.container-cards-2 {
-  height: auto;
+.container-cards-2-grid {
   display: -ms-grid;
   display: grid;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 30px;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
+  gap: 30px 40px;
+  -ms-grid-columns: (auto)[3];
+      grid-template-columns: repeat(3, auto);
   margin-bottom: 64px;
+  margin-top: 64px;
+  /* 
+    a:nth-child(2n+1) {
+        //opacity: .1;
+        grid-column: span 2;
+      } */
+}
+
+@media (max-width: 1100px) {
+  .container-cards-2-grid {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 767px) {
-  .container-cards-2 {
+  .container-cards-2-grid {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     -webkit-box-orient: vertical;
@@ -1504,6 +1516,44 @@ body {
             flex-direction: column;
     width: 100%;
   }
+}
+
+.container-cards-2-grid img {
+  width: 100%;
+}
+
+.container-cards-2-grid .cuatro {
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 2;
+  grid-row: 2;
+}
+
+.container-cards-2-grid .cinco {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2/4;
+  -ms-grid-row: 2;
+  grid-row: 2;
+}
+
+.container-cards-2-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 30px 40px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container-cards-2-flex > a {
+  width: 31%;
 }
 
 footer {
@@ -2128,6 +2178,26 @@ footer .cr {
   .card-2__contenido-titulo h1 {
     font-size: 1rem;
   }
+}
+
+.cuatro-flex {
+  -webkit-box-flex: 31%;
+      -ms-flex: 31%;
+          flex: 31%;
+}
+
+.cuatro-flex img {
+  width: 400px;
+}
+
+.cinco-flex {
+  -webkit-box-flex: 62%;
+      -ms-flex: 62%;
+          flex: 62%;
+}
+
+.cinco-flex img {
+  width: 840px;
 }
 
 /* The container must be positioned relative: */
