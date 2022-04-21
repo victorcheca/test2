@@ -409,3 +409,49 @@
     
   }
 }    
+
+
+.flex-item{
+  background: whitesmoke;
+  //width: auto;
+  height: 150px;
+  //line-height: 150px;
+  color: grey;
+  font-weight: bold;
+  font-size: 3em;
+  text-align: center;
+  border:1px solid black;
+  flex-basis: 200px;
+  overflow: hidden;
+}
+
+.item-1{
+  flex-grow: 0;
+  flex-shrink:0 ;
+  
+}
+.item-2{
+  flex-grow: 1;
+  flex-shrink:0 ;
+  
+}
+.item-3{
+  flex-grow: 1;
+  flex-shrink:0 ;
+  
+}
+.item-4{
+  flex-grow: 0;
+  flex-shrink:2;
+  
+}
+.item-5{
+  flex-grow: 1;
+  flex-shrink:0;
+  
+}
+.item-6{
+  flex-grow: 1;
+  flex-shrink:0;
+ 
+}

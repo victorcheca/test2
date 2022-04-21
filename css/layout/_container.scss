@@ -12,7 +12,7 @@ body{
     //box-sizing: border-box;
     padding-left: 1rem;
     padding-right: 1rem;
-    max-width: 1320px;
+    max-width: 1300px;
     margin-left: auto;
     margin-right: auto;
     
@@ -755,13 +755,15 @@ body{
       } */
 }
 .container-cards-2-flex{
+    margin-bottom: $vertical-spacing-3;
+    margin-top: $vertical-spacing-3;
     display: flex;
     flex-wrap: wrap;
     gap: 30px 40px;
     justify-content: space-between;
     align-items: center;
     & > a{
-        width: 31%;
+        flex: 31%;
     }
 
     
@@ -769,3 +771,15 @@ body{
     
 }
 
+
+.container-flex{
+    border: 1px solid grey;
+    max-width: 600px;
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: flex-start;
+    padding: 10px;
+    
+}
